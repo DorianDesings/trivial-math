@@ -1,0 +1,24 @@
+{
+  "gameData": [
+    {
+      "question": "2 x 3",
+      "answers": ["2", "4", "6", "8"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "10 + 35",
+      "answers": ["50", "45", "62", "42"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "140 - 86",
+      "answers": ["27", "54", "62", "87"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "60 / 2",
+      "answers": ["20", "40", "60", "30"],
+      "correctAnswer": 3
+    }
+  ]
+}
