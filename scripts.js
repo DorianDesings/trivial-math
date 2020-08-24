@@ -2,10 +2,14 @@ const question = document.getElementById('question');
 const buttonsElement = [...document.querySelectorAll('.container__button')];
 const buttons = document.getElementById('buttons');
 const info = document.getElementById('questions-info');
+const scoreElement = document.getElementById('score');
 
 let gameData;
 let correctAnswer;
 let index = 0;
+let score = 0;
+
+scoreElement.textContent = `Score: ${score}`;
 
 const writeData = () => {
   question.textContent = gameData[index].question;
@@ -28,6 +32,8 @@ const checkAnswer = userAnswer => {
   if (userAnswer === correctAnswer) {
     console.log('CHUPI');
     index += 1;
+    score += 1;
+    scoreElement.textContent = `Score: ${score}`;
     if (index < gameData.length) {
       writeData();
     } else {
